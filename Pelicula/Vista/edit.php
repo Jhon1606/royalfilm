@@ -1,0 +1,74 @@
+<form action="../Controlador/edit.php" method="POST" >
+<input type="hidden" id="ideditar" name="id_pelicula">
+
+    <div class="contenedor__form auto" onclick="stop()">
+        <div class="cerrar">
+            <p onclick="document.getElementById('flotanteEditar').style.display='none'" 
+            class="cerrar" title="Cerrar">
+            <i class="fa fa-close"></i>
+            </p>
+        </div>
+
+        <div class="titulo">
+            <h2 class="tituloCrud"><i class="fa fa-pencil"></i> Editar película</h2>
+        </div>
+
+        <div class="form--flex">
+            <label class="form--label" for="nombre">Nombre de la película</label>
+            <input type="text" class="form--input" name="nombre" id="nombre" placeholder="Nombre de la película..."
+            onChange="this.value=(this.value).toUpperCase()" style="text-transform:uppercase" required="">
+        </div>
+        
+        <div class="form--flex">
+            <label class="form--label" for="idioma">Idioma</label>
+            <input type="text" class="form--input" name="idioma" id="idioma" placeholder="Idioma..." required="">
+        </div>
+
+        <div class="form--flex">
+            <label class="form--label" for="clasificacion">Clasificación</label>
+            <select name="clasificacion" id="clasificacion" class="form--input" required="">
+                <option value="">Seleccione una opción</option>
+                <option>Todo público</option>
+                <option>+12 años</option>
+                <option>+14 años</option>
+            </select>
+        </div>
+
+        <div class="form--flex">
+            <label class="form--label" for="duracion">Duración (min)</label>
+            <input type="number" class="form--input" name="duracion" id="duracion" placeholder="Duración de la película..." required="">
+        </div>
+
+        <div class="form--flex">
+            <label class="form--label" for="estreno">Fecha de estreno</label>
+            <input class="form--input" type="date" name="estreno" id="estreno">
+        </div>
+
+        <div class="form--flex">
+            <label class="form--label" for="urlpelicula">Url del trailer</label>
+            <input type="text" name="urlpelicula" id="urlpelicula" class="form--input" required=""></input>
+        </div>
+
+        <div class="form--flex">
+            <label class="form--label" for="sinopsis">Sinopsis</label>
+            <textarea name="sinopsis" id="sinopsis" class="form--input" placeholder="Especifique el nombre de la obra o labor..."
+            onChange="this.value=(this.value).toLowerCase()" style="text-transform:lowercase" required=""></textarea>
+        </div>
+
+        <div class="form--flex">
+            <label class="form--label" for="director">Director de la película</label>
+            <textarea name="director" id="director" class="form--input" placeholder="Director de la película..."
+            onChange="this.value=(this.value).toLowerCase()" style="text-transform:lowercase" required=""></textarea>
+        </div>
+
+        <div class="form--flex">
+            <label class="form--label" for="reparto">Reparto de la película</label>
+            <textarea name="reparto" id="reparto" class="form--input" placeholder="Reparto de la película..."
+            onChange="this.value=(this.value).toLowerCase()" style="text-transform:lowercase" required=""></textarea>
+        </div>
+
+        <div class="form--boton boton--enviar">
+            <input class="boton" type="submit" value="Enviar">
+        </div> 
+    </div> <!-- .contenedor__form--talento-->
+</form>
