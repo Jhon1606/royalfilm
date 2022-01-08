@@ -47,7 +47,7 @@
                                     <th>Película</th>
                                     <th class="anchoa2">Clasificacion</th>
                                     <th class="anchoa2">Fecha de estreno</th>
-                                    <th class="anchoa">Acciones</th>
+                                    <th class="anchoa">Opciones</th>
                                 </tr>
                             </thead>
               
